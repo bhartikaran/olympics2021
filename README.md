@@ -29,28 +29,28 @@ To fetch the data:
 
 The raw data can be found in /Data folder of the repository.
 
-2. Transform Data Using Azure Databricks
+### 2. Transform Data Using Azure Databricks
 Once the data is stored in the Azure Data Lake, we use Azure Databricks for basic transformations. The notebook Olympicsdata_transformation.ipynb contains the logic for transforming the raw data.
 
 Launch Azure Databricks and open the notebook Olympicsdata_transformation.ipynb.
 Run the transformations as per the requirements (e.g., cleaning data, handling missing values, feature engineering).
 After transforming the data, save the transformed data back into Azure Data Lake.
-3. Load Transformed Data into Azure Data Lake
+### 3. Load Transformed Data into Azure Data Lake
 The transformed data will be stored in Azure Data Lake, allowing you to process large amounts of data in a scalable way.
 
 Use Azure Data Factory to orchestrate the movement of data from the raw storage to the transformed storage.
-4. Set Up Azure Synapse and Query the Data
+### 4. Set Up Azure Synapse and Query the Data
 In Azure Synapse Analytics, you can query the transformed data using SQL.
 
 Create a database in Azure Synapse that points to the transformed data stored in Azure Data Lake.
 Use the file path to connect to the data and create tables/views within Synapse.
 
 
-Technologies Used
-Azure Data Factory: For orchestrating data pipelines.
-Azure Data Lake: For storing raw and transformed data.
-Azure Databricks: For data transformation using Python and Spark.
-Azure Synapse Analytics: For querying and analyzing the data using SQL.
-Kaggle API: For fetching the Olympics dataset.
-Conclusion
-This project demonstrates how to integrate several Azure services to create an ETL pipeline for processing and analyzing large datasets. By using Azure Data Factory, Databricks, Data Lake, and Synapse Analytics, this solution can handle large-scale data processing and provide valuable insights for the Tokyo 2021 Olympics dataset.
+### Technologies Used
+Azure Data Factory: For orchestrating data pipelines.<br>
+Azure Data Lake: For storing raw and transformed data.<br>
+Azure Databricks: For data transformation using Python and Spark.<br>
+Azure Synapse Analytics: For querying and analyzing the data using SQL.<br>
+Kaggle API: For fetching the Olympics dataset.<br>
+### Conclusion
+This project demonstrates how to integrate several Azure services to create an ETL pipeline for processing and analyzing datasets. By using Azure Data Factory, Databricks, Data Lake, and Synapse Analytics, this solution can handle large-scale data processing and provide valuable insights for the Tokyo 2021 Olympics dataset.
